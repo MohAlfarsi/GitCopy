@@ -9,7 +9,7 @@ namespace GitCopy.Models
     {
         
         public int Id { get; set; }
-        public String text  { get; set; } = "";
+        public String text  { get; set; } = "this is the comment post's comment";
         
     }
 }
