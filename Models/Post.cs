@@ -9,5 +9,6 @@ namespace GitCopy.Models
     {
         public int Id { get; set; }
         public String Title { get; set; } = "Title";
+        public String Text { get; set; } = "this will be comment filed";
     }
 }
