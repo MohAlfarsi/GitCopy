@@ -1,32 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mohammed.alfarsi\\Desktop\\Task 1\\GitCopy\\GitCopy.csproj": {}
+    "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mohammed.alfarsi\\Desktop\\Task 1\\GitCopy\\GitCopy.csproj": {
+    "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohammed.alfarsi\\Desktop\\Task 1\\GitCopy\\GitCopy.csproj",
+        "projectUniqueName": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
         "projectName": "GitCopy",
-        "projectPath": "C:\\Users\\mohammed.alfarsi\\Desktop\\Task 1\\GitCopy\\GitCopy.csproj",
-        "packagesPath": "C:\\Users\\mohammed.alfarsi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mohammed.alfarsi\\Desktop\\Task 1\\GitCopy\\obj\\",
+        "projectPath": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
+        "packagesPath": "C:\\Users\\mrmsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\mohammed.alfarsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mrmsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +45,20 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLServer": {
               "target": "Package",
               "version": "[7.0.11, )"
             },
@@ -73,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
