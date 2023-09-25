@@ -20,13 +20,11 @@ namespace GitCopy.Controllers
         };
         private readonly IPostService _postService;
 
-
         //Constractor
         public PostsController(IPostService postService)
         {
             _postService = postService;
         }
-
 
         [HttpGet("GetAll")]
         public ActionResult<List<Post>> Get()
@@ -34,13 +32,11 @@ namespace GitCopy.Controllers
             return Ok(_postService.GetAllPosts());
         }
         
-
         [HttpGet("{id}")]
         public ActionResult<List<Post>> GetSingle(int id)
         {
             return Ok(_postService.GetPostById(id));
         }
-
 
         [HttpPost]
         public ActionResult<List<Post>> AddPost(Post newPost)

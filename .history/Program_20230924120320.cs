@@ -1,9 +1,5 @@
 //Global use - added
-global using GitCopy.Services.PostService;
 
-
-
-//------------------------------------------------------------------
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +9,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-//added services
-builder.Services.AddScoped<IPostService, PostService>();
 
 var app = builder.Build();
 

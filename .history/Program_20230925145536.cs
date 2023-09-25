@@ -14,9 +14,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//added services
-builder.Services.AddScoped<IPostService, PostService>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
