@@ -10,7 +10,7 @@ namespace GitCopy.Services.PostService
     public interface IPostService
     {
         Task<List<Post>> GetAllPosts();
-        Task<Post> GetPostById(int id);
+        Post GetPostById(int id);
         Task<List<Post>> AddPost(Post newPost);
     }
 }

@@ -16,20 +16,20 @@ namespace GitCopy.Services.PostService
         };
 
         // Adding a Post 
-        public async Task<List<Post>> AddPost(Post newPost)
+        public List<Post> AddPost(Post newPost)
         {
             posts.Add(newPost);
             return posts;
         }
 
         //Getting a list of posts
-        public async Task<List<Post>> GetAllPosts()
+        public List<Post> GetAllPosts()
         {
             return posts;
         }
 
-        //Getting a post By ID
-        public async Task<Post> GetPostById(int id)
+        //
+        public Post GetPostById(int id)
         {
             var post = posts.FirstOrDefault(p => p.Id == id);
 
