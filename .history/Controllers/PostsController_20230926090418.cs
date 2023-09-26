@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
+using GitCopy.Models;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace GitCopy.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("posts/[controller]")]
     public class PostsController : ControllerBase
     {
         
@@ -36,7 +36,7 @@ namespace GitCopy.Controllers
         
 
         [HttpGet("{id}")]
-        public ActionResult<List<Post>> GetSingle(int id)
+        public ActionResult<List<Post>> GetSingle(String id)
         {
             return Ok(_postService.GetPostById(id));
         }

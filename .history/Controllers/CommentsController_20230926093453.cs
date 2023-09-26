@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,8 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace GitCopy.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class PostsController : ControllerBase
+    [Route("posts/[controller]")]
+    public class CommentsController : ControllerBase
     {
         
         private static List<Post> posts = new List<Post>()
@@ -22,7 +21,7 @@ namespace GitCopy.Controllers
 
 
         //Constractor
-        public PostsController(IPostService postService)
+        public CommentsController(IPostService postService)
         {
             _postService = postService;
         }
@@ -31,14 +30,14 @@ namespace GitCopy.Controllers
         [HttpGet("GetAll")]
         public ActionResult<List<Post>> Get()
         {
-            return Ok(_postService.GetAllPosts());
+            return Ok(_postService.GetAllComments());
         }
         
 
         [HttpGet("{id}")]
         public ActionResult<List<Post>> GetSingle(int id)
         {
-            return Ok(_postService.GetPostById(id));
+            return Ok(_postService.GetCommentById(id));
         }
 
 

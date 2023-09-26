@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GitCopy.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("posts/[controller]")]
     public class PostsController : ControllerBase
     {
         

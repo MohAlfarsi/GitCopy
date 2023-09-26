@@ -29,9 +29,9 @@ namespace GitCopy.Services.PostService
         }
 
         //
-        public Post GetPostById(int id)
+        public Post GetPostById(String id)
         {
-            var post = posts.FirstOrDefault(p => p.Id == id);
+            var post = posts.FirstOrDefault(p => p.Title == id);
 
             if(post is not null)
                 return post;

@@ -15,20 +15,17 @@ namespace GitCopy.Services.PostService
             new Post { Id = 1, Title = "The Start", Text = "this is where it all begins"}
         };
 
-        // Adding a Post 
         public List<Post> AddPost(Post newPost)
         {
             posts.Add(newPost);
             return posts;
         }
 
-        //Getting a list of posts
         public List<Post> GetAllPosts()
         {
             return posts;
         }
 
-        //
         public Post GetPostById(int id)
         {
             var post = posts.FirstOrDefault(p => p.Id == id);
