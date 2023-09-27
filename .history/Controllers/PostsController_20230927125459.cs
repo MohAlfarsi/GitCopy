@@ -64,7 +64,7 @@ namespace GitCopy.Controllers
         }
         
 
-        [HttpDelete("{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<ServiceResponse<GetPostDto>>> DeletePost(int id)
         {
             var response = await _postService.DeletePost(id);

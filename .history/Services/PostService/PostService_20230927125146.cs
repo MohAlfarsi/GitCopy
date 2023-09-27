@@ -43,7 +43,7 @@ namespace GitCopy.Services.PostService
 
 
         //Deleteing a post
-        public async Task<ServiceResponse<List<GetPostDto>>> DeletePost(int id)
+        public async Task<ServiceResponse<List<GetPostDto>>> DeletePosts(int id)
         {
             var serviceResponse = new ServiceResponse<List<GetPostDto>>();
 

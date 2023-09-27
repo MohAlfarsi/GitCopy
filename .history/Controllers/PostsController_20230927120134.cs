@@ -38,7 +38,7 @@ namespace GitCopy.Controllers
         
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ServiceResponse<GetPostDto>>> GetSingle(int id)
+        public async Task<ActionResult<ServiceResponse<List<GetPostDto>>>> GetSingle(int id)
         {
             return Ok(await _postService.GetPostById(id));
         }
@@ -55,26 +55,8 @@ namespace GitCopy.Controllers
         [HttpPut]
         public async Task<ActionResult<ServiceResponse<List<GetPostDto>>>> UpdatePost(UpdatePostDto updatedPost)
         {
-            var response = await _postService.UpdatePost(updatedPost);
-            if(response.Data is null){
-                return NotFound(response);
-            }
-
-            return Ok(response);
+            return Ok(await _postService.UpdatePost(updatedPost));
         }
-        
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<ServiceResponse<GetPostDto>>> DeletePost(int id)
-        {
-            var response = await _postService.DeletePost(id);
-            if(response.Data is null){
-                return NotFound(response);
-            }
-
-            return Ok(response);
-        }
-
         
     }
 }

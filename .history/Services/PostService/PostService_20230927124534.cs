@@ -43,19 +43,20 @@ namespace GitCopy.Services.PostService
 
 
         //Deleteing a post
-        public async Task<ServiceResponse<List<GetPostDto>>> DeletePost(int id)
+        public async Task<ServiceResponse<List<GetPostDto>>> DeletePosts(int id)
         {
-            var serviceResponse = new ServiceResponse<List<GetPostDto>>();
+            var serviceResponse = new ServiceResponse<GetPostDto>();
 
             try {
-                var post = posts.FirstOrDefault(p => p.Id == id);
+                var post = posts.FirstOrDefault(p => p.Id == updatedPost.Id);
 
                 if(post is null)
-                    throw new Exception($"Character with Id '{id}' not found.");
+                    throw new Exception($"Character with Id '{updatedPost.Id}' not found.");
 
-                posts.Remove(post);
+                post.Title = updatedPost.Title;
+                post.Text = updatedPost.Text;
 
-                serviceResponse.Data = posts.Select( p => _mapper.Map<GetPostDto>(p)).ToList();
+                serviceResponse.Data = _mapper.Map<GetPostDto>(post);
 
             }
             catch (Exception ex)

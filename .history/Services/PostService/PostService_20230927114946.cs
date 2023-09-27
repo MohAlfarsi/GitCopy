@@ -5,7 +5,6 @@ using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
 using GitCopy.Dtos.Post;
 using GitCopy.Models;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace GitCopy.Services.PostService
 {
@@ -42,32 +41,6 @@ namespace GitCopy.Services.PostService
         }
 
 
-        //Deleteing a post
-        public async Task<ServiceResponse<List<GetPostDto>>> DeletePost(int id)
-        {
-            var serviceResponse = new ServiceResponse<List<GetPostDto>>();
-
-            try {
-                var post = posts.FirstOrDefault(p => p.Id == id);
-
-                if(post is null)
-                    throw new Exception($"Character with Id '{id}' not found.");
-
-                posts.Remove(post);
-
-                serviceResponse.Data = posts.Select( p => _mapper.Map<GetPostDto>(p)).ToList();
-
-            }
-            catch (Exception ex)
-            {
-                serviceResponse.Success = false;
-                serviceResponse.Message = ex.Message;
-            }    
-            
-            return serviceResponse;
-        }
-
-
 
         //Getting a list of posts
         public async Task<ServiceResponse<List<GetPostDto>>> GetAllPosts()
@@ -93,32 +66,9 @@ namespace GitCopy.Services.PostService
 
         }
 
-
-        //Updating a post
-        public async Task<ServiceResponse<GetPostDto>> UpdatePost(UpdatePostDto updatedPost)
+        public Task<ServiceResponse<GetPostDto>> UpdatePost(UpdatePostDto updatePost)
         { 
-            var serviceResponse = new ServiceResponse<GetPostDto>();
-
-            try {
-                var post = posts.FirstOrDefault(p => p.Id == updatedPost.Id);
-
-                if(post is null)
-                    throw new Exception($"Character with Id '{updatedPost.Id}' not found.");
-
-                post.Title = updatedPost.Title;
-                post.Text = updatedPost.Text;
-
-                serviceResponse.Data = _mapper.Map<GetPostDto>(post);
-
-            }
-            catch (Exception ex)
-            {
-                serviceResponse.Success = false;
-                serviceResponse.Message = ex.Message;
-            }    
-            
-            return serviceResponse;
-
+            throw new NotImplementedException();
         }
     }
 }

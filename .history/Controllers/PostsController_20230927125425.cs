@@ -38,7 +38,7 @@ namespace GitCopy.Controllers
         
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ServiceResponse<GetPostDto>>> GetSingle(int id)
+        public async Task<ActionResult<ServiceResponse<List<GetPostDto>>>> GetSingle(int id)
         {
             return Ok(await _postService.GetPostById(id));
         }
@@ -64,7 +64,7 @@ namespace GitCopy.Controllers
         }
         
 
-        [HttpDelete("{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<ServiceResponse<GetPostDto>>> DeletePost(int id)
         {
             var response = await _postService.DeletePost(id);

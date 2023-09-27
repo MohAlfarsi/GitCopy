@@ -107,3 +107,5 @@ C:\Users\mrmsa\OneDrive\Desktop\Work\Godot\Repositorys\GitCopy\bin\Debug\net7.0\
 C:\Users\mrmsa\OneDrive\Desktop\Work\Godot\Repositorys\GitCopy\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\mrmsa\OneDrive\Desktop\Work\Godot\Repositorys\GitCopy\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\mrmsa\OneDrive\Desktop\Work\Godot\Repositorys\GitCopy\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\mrmsa\OneDrive\Desktop\Work\Godot\Repositorys\GitCopy\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\mrmsa\OneDrive\Desktop\Work\Godot\Repositorys\GitCopy\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

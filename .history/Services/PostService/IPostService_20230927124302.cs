@@ -14,6 +14,6 @@ namespace GitCopy.Services.PostService
         Task<ServiceResponse<GetPostDto>> GetPostById(int id);
         Task<ServiceResponse<List<GetPostDto>>> AddPost(AddPostDto newPost);
         Task<ServiceResponse<GetPostDto>> UpdatePost(UpdatePostDto newPost);
-        Task<ServiceResponse<List<GetPostDto>>> DeletePost(int id);
+        Task<ServiceResponse<List<GetPostDto>>> DeletePosts(int id);
     }
 }
