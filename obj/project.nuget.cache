@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YOPc3XjbJjz0gjHcZq5AHoPgEhSApmyB8BSmkJspPivXUkvrC5Zo6Z+FvPkCrAqJ+Y7rTEV/tfv6TjVBoa6Jvw==",
+  "dgSpecHash": "kb8lutEiiWmeTxvo7V7AZ2RTwAscNLLEXqNwJRV3itGL3C3xN9pVOAVzTnAZQCt9X+pp2LLFQuv+BKOhRuG/PQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
+  "projectFilePath": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrmsa\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mrmsa\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
