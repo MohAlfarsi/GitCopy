@@ -43,7 +43,7 @@ namespace GitCopy.Controllers
         }
 
 
-        [HttpPost]
+        [HttpComment]
         public async Task<ActionResult<ServiceResponse<List<GetCommentDto>>>> AddComment(AddCommentDto newComment)
         {
             return Ok(await _commentService.AddComment(newComment));
