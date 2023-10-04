@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj": {}
+    "c:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj": {
+    "c:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
+        "projectUniqueName": "c:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
         "projectName": "GitCopy",
-        "projectPath": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
+        "projectPath": "c:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\GitCopy.csproj",
         "packagesPath": "C:\\Users\\mrmsa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\obj\\",
+        "outputPath": "c:\\Users\\mrmsa\\OneDrive\\Desktop\\Work\\Godot\\Repositorys\\GitCopy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
