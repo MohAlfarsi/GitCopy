@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GitCopy.Dtos.Comment;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace GitCopy.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class CommentsController : ControllerBase

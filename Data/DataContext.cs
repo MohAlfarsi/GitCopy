@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace GitCopy.Data
 {
@@ -14,16 +15,16 @@ namespace GitCopy.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Skill>().HasData(
-                new Skill { Id = 1, Name = "Fireball", Damage = 30 },
-                new Skill { Id = 2, Name = "Frenzy", Damage = 20 },
-                new Skill { Id = 3, Name = "Blizzard", Damage = 50 }
+            modelBuilder.Entity<Comment>().HasData(
+                new Comment { Id = 1, Text = "I know Right"},
+                new Comment { Id = 2, Text = "That's funny XD"},
+                new Comment { Id = 3, Text = "Is this thing even real??"}
             );
         }
-
-        public DbSet<Character> Characters => Set<Character>();
+        
         public DbSet<User> Users => Set<User>();
-        public DbSet<Weapon> Weapons => Set<Weapon>();
-        public DbSet<Skill> Skills => Set<Skill>();
+        public DbSet<Post> Characters => Set<Post>();
+        public DbSet<Comment> Comments => Set<Comment>();
+
     }
 }

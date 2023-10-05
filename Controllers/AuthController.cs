@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GitCopy.Data;
 using GitCopy.Dtos.User;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet_rpg.Controllers
+namespace GitCopy.Controllers
 {
     [ApiController]
     [Route("[controller]")]

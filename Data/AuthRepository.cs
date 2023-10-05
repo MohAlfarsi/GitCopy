@@ -2,8 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
+using GitCopy.Dtos.User;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Routing.Tree;
+using Microsoft.Identity.Client.AppConfig;
 using Microsoft.IdentityModel.Tokens;
 
 namespace GitCopy.Data
@@ -89,6 +95,8 @@ namespace GitCopy.Data
                 return computedHash.SequenceEqual(passwordHash);
             }
         }
+
+
 
         private string CreateToken(User user)
         {

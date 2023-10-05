@@ -5,11 +5,15 @@ using System.Threading.Tasks;
 
 namespace GitCopy.Models
 {
-    public class Comment
+    public class User
     {
-        
         public int Id { get; set; }
-        public String Text  { get; set; } = "this is post 0 comments";
+
+        public string Username { get; set; } = string.Empty;
+
+        public byte[] PasswordHash { get; set; } = new byte[0];
+        
+        public byte[] PasswordSalt { get; set; } = new byte[0];
 
         public List<Post>? posts { get; set; }
     }
